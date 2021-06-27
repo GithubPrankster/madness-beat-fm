@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/grunt_body.tres" type="Material" id=1]
+[ext_resource path="res://assets/grunt_face.tres" type="Material" id=2]
+[ext_resource path="res://assets/grunt.glb" type="PackedScene" id=3]
+[ext_resource path="res://assets/grunt_shadow.tres" type="Material" id=4]
+[ext_resource path="res://assets/grunt_gloves.tres" type="Material" id=5]
+
+[node name="grunt" instance=ExtResource( 3 )]
+
+[node name="Shadow" parent="." index="0"]
+material/0 = ExtResource( 4 )
+
+[node name="BootR" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="BootR001" parent="Armature/Skeleton" index="1"]
+material/0 = ExtResource( 1 )
+
+[node name="HandR" parent="Armature/Skeleton" index="2"]
+material/0 = ExtResource( 5 )
+
+[node name="HandR001" parent="Armature/Skeleton" index="3"]
+material/0 = ExtResource( 5 )
+
+[node name="Head" parent="Armature/Skeleton" index="4"]
+material/0 = ExtResource( 2 )
+
+[node name="Torso" parent="Armature/Skeleton" index="5"]
+material/0 = ExtResource( 1 )
